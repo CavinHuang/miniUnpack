@@ -1,0 +1,116 @@
+page {
+    background: #000;
+}
+
+.bimg,page {
+    height: 100%;
+    width: 100%;
+}
+
+.bimg {
+    position: fixed;
+    top: 0;
+    z-index: 0;
+}
+
+.banner {
+    height: 378rpx;
+    margin: 190rpx 30rpx 0;
+}
+
+.banner,.search {
+    position: relative;
+    width: calc(100% - 60rpx);
+}
+
+.search {
+    background-color: hsla(0,0%,100%,.94);
+    border: 4rpx solid #4739f4;
+    border-radius: 30rpx;
+    height: 120rpx;
+    margin: 52rpx 30rpx 0;
+    overflow: hidden;
+}
+
+.searchIco {
+    height: 32rpx;
+    margin: 0 30rpx;
+    width: 32rpx;
+}
+
+.searchValue {
+    color: #000;
+    flex: 1;
+    font-size: 36rpx;
+    height: 100%;
+    line-height: 120rpx;
+}
+
+.submit {
+    background-color: #4739f4;
+    border-radius: 16rpx;
+    color: #fff;
+    font-size: 30rpx;
+    font-weight: 700;
+    height: 88rpx;
+    line-height: 88rpx;
+    margin-right: 16rpx;
+    text-align: center;
+    width: 160rpx;
+}
+
+.author-tip-img {
+    height: 38rpx;
+    margin-top: 80rpx;
+    width: 424rpx;
+}
+
+.scrollX {
+    margin: 46rpx 16rpx;
+    width: calc(100% - 32rpx);
+}
+
+.framerList {
+    height: 100%;
+    width: 100%;
+}
+
+.framer-item {
+    flex-shrink: 0;
+    height: 100%;
+    width: 20%;
+}
+
+.itemImg {
+    border: 6rpx solid #f5f5f5;
+    border-radius: 50%;
+    display: block;
+    height: 120rpx;
+    margin: auto;
+    width: 120rpx;
+}
+
+.recommend {
+    margin: 100rpx 16rpx 0;
+    width: calc(100%- 32rpx);
+}
+
+.recommend .list-item {
+    display: inline-flex;
+    margin-bottom: 32rpx;
+    position: relative;
+    width: 32%;
+}
+
+.recommend .list-item:nth-child(3n-1) {
+    margin: 0 2%;
+}
+
+.recommend .list-item image {
+    border: 2rpx solid #fff;
+    border-radius: 16rpx;
+    height: 360rpx;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}

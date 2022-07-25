@@ -1,0 +1,1 @@
+<view bindtap="complaint" class="complaint-view" style="top:{{top}}rpx;">我要吐槽</view>

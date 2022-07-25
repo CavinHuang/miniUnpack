@@ -1,0 +1,10 @@
+{
+    "usingComponents": {
+        "imgloading": "/components/imgloading/index",
+        "loading": "/components/loading/index"
+    },
+    "navigationStyle": "custom",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "创作者",
+    "navigationBarTextStyle": "white"
+}

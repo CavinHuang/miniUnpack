@@ -1,0 +1,3 @@
+<view class="component-loading-view" style="z-index: {{zIndex}};" wx:if="{{show}}">
+    <view class="k-loader k-circle"></view>
+</view>

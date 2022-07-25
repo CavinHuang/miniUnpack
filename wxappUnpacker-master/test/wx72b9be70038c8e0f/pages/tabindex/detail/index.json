@@ -1,0 +1,10 @@
+{
+    "usingComponents": {
+        "backbtn": "/components/backBtn/backbtn",
+        "complaint": "/components/complaint/complaint",
+        "loading": "/components/loading/index"
+    },
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "详情"
+}

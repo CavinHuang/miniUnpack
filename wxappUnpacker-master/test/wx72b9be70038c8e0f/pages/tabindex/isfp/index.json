@@ -1,0 +1,10 @@
+{
+    "usingComponents": {
+        "backbtn": "/components/backBtn/backbtn",
+        "loading": "/components/imgloading/index",
+        "totop": "/components/totop/index"
+    },
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "创作者"
+}

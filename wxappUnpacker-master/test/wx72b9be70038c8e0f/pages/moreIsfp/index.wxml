@@ -1,0 +1,48 @@
+<loading show="{{loading}}"></loading>
+<image class="bimg" mode="aspectFill" src="https://img.yugew.com/image/f481993a27969e9d569680082de46a7d.png"></image>
+<view class="page">
+    <view class="index">
+        <image bindtap="goFramer" class="framer" mode="widthFix" src="https://img.yugew.com/image/98bff8cb163a50182db7f4d1f3630210.png"></image>
+        <view class="followList">
+            <block wx:for="{{list}}" wx:for-index="listIndex" wx:for-item="itemlist" wx:key="key">
+                <view class="list-item" wx:for="{{itemlist}}" wx:key="key">
+                    <view bindtap="goisfp" class="item" data-id="{{item.id}}">
+                        <view class="itemTop flex ac jb">
+                            <image class="userImg" mode="aspectFill" src="{{item.avatar}}"></image>
+                            <view class="userInfo flex fc jc">
+                                <view class="userName txt">{{item.search_code}}</view>
+                            </view>
+                            <view class="more flex ac ">
+                                <view>查看全部</view>
+                                <image class="rightIco" mode="widthFix" src="/image/icon_right.png"></image>
+                            </view>
+                        </view>
+                        <view class="itemCon flex ac jc">
+                            <view class="itemImgCon itemImgCon{{index1}}" wx:if="{{index1<3}}" wx:for="{{item.photoList}}" wx:for-index="index1" wx:for-item="item1" wx:key="key">
+                                <image class="itemImg" mode="aspectFill" src="{{item1.url}}"></image>
+                                <view class="image-loading-view" style="position: absolute;top:0;width:100%;height: 100%;">
+                                    <imgloading show="{{true}}" zIndex="0"></imgloading>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </view>
+        <view class="loadmore">
+            <view class="loading-more" wx:if="{{hasMore}}">
+                <view class="more-bottom-line" style=" display: flex;">
+                    <view class="more-loading"></view>
+                    <text class="more-lineTxt">正在加载...</text>
+                </view>
+            </view>
+            <view class="more-finish" wx:if="{{!hasMore&&!empty}}">
+                <view class="more-bottom-line">
+                    <view class="more-line"></view>
+                    <text class="more-lineTxt">我是有底线的</text>
+                    <view class="more-line"></view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

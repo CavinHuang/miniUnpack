@@ -1,0 +1,101 @@
+.component-loading-view {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+
+.k-loader {
+    display: inline-block;
+    font-size: 50rpx;
+    height: 20rpx;
+    margin: 0 12rpx;
+    position: relative;
+    width: 40rpx;
+}
+
+.k-loader:after,.k-loader:before {
+    content: "";
+    display: block;
+    height: .5em;
+    position: absolute;
+    width: .5em;
+}
+
+.k-loader:before {
+    animation: k-loadingK 2s ease-in-out infinite,k-loadingM .66s ease-in-out infinite;
+    background: #ee6362;
+}
+
+.k-loader:after {
+    animation: k-loadingL 2s ease-in-out infinite,k-loadingN .66s ease-in-out infinite;
+    background: #458ffc;
+}
+
+.k-circle-after:after,.k-circle-before:before,.k-circle:after,.k-circle:before {
+    border-radius: 50%;
+}
+
+@keyframes k-loadingK {
+    0% {
+        left: 0;
+        transform: scale(1.1);
+    }
+
+    50% {
+        left: 100%;
+        transform: scale(1);
+    }
+
+    100% {
+        left: 0;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes k-loadingL {
+    0% {
+        left: 100%;
+        transform: scale(1.1);
+    }
+
+    50% {
+        left: 0;
+        transform: scale(1);
+    }
+
+    100% {
+        left: 100%;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes k-loadingM {
+    0% {
+        z-index: 0;
+    }
+
+    50% {
+        z-index: 1;
+    }
+
+    100% {
+        z-index: 0;
+    }
+}
+
+@keyframes k-loadingN {
+    0% {
+        z-index: 1;
+    }
+
+    50% {
+        z-index: 0;
+    }
+
+    100% {
+        z-index: 1;
+    }
+}

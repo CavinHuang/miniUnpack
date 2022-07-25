@@ -1,0 +1,9 @@
+<view bindtap="back" class="backBtn flex-column" style="top:{{top}}px;" wx:if="{{model==1&&!showHome}}">
+    <image class="image" mode="widthFix" src="{{btnImg}}"></image>
+</view>
+<view bindtap="back" class="backBtn2 flex-column" style="top:{{top}}px;" wx:if="{{model==2&&!showHome}}">
+    <image class="image" mode="widthFix" src="{{btnImg}}"></image>
+</view>
+<view bindtap="back" wx:if="{{showHome}}">
+    <image class="home-ico" mode="widthFix" src="{{btnImg}}" style="top:{{top}}px;"></image>
+</view>

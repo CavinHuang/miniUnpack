@@ -1,0 +1,38 @@
+.backBtn {
+    background: hsla(0,0%,100%,.4);
+}
+
+.backBtn,.backBtn2 {
+    border-radius: 120rpx;
+    height: 60rpx;
+    justify-content: center;
+    left: 36rpx;
+    position: fixed;
+    text-align: center;
+    top: 80rpx;
+    width: 100rpx;
+    z-index: 999999999;
+}
+
+.backBtn2 {
+    background: rgba(0,0,0,.2);
+}
+
+.backBtn .image,.backBtn2 .image {
+    height: 36rpx;
+    left: 50%;
+    margin-left: -18rpx;
+    margin-top: -18rpx;
+    position: absolute;
+    top: 50%;
+    width: 36rpx;
+}
+
+.home-ico {
+    height: 60rpx;
+    left: 32rpx;
+    position: fixed;
+    top: 100rpx;
+    width: 60rpx;
+    z-index: 999999999;
+}

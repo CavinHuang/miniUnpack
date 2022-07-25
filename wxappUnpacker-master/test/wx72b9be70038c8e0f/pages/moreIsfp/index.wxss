@@ -1,0 +1,147 @@
+page {
+    background: #000;
+}
+
+.bimg,page {
+    height: 100%;
+    width: 100%;
+}
+
+.bimg {
+    position: fixed;
+    top: 0;
+    z-index: 0;
+}
+
+.index {
+    line-height: 0;
+    padding: 20rpx 0 50rpx;
+    position: relative;
+    width: 750rpx;
+}
+
+.framer {
+    display: block;
+    height: 180rpx;
+    margin: 196rpx auto 60rpx;
+    width: 714rpx;
+}
+
+.followList {
+    height: max-content;
+    width: 100%;
+}
+
+.followList .list-item {
+    height: 460rpx;
+    margin-bottom: 60rpx;
+    width: 100%;
+}
+
+.item {
+    background: linear-gradient(0deg,rgba(71,57,244,.1),hsla(0,0%,100%,.1));
+    border-radius: 24rpx;
+    height: 100%;
+    margin: 0 16rpx;
+    position: relative;
+    width: calc(100% - 32rpx);
+}
+
+.itemTop {
+    height: 104rpx;
+    padding: 0 54rpx;
+    position: absolute;
+    top: -32rpx;
+    width: 100%;
+}
+
+.userImg {
+    background: #fff;
+    border: 4rpx solid #fff;
+    border-radius: 50%;
+    flex-shrink: 0;
+    height: 104rpx;
+    width: 104rpx;
+}
+
+.userInfo {
+    flex-shrink: 0;
+    flex: 1;
+    height: 68rpx;
+    margin-top: 32rpx;
+    padding-left: 18rpx;
+    padding-right: 18rpx;
+}
+
+.userName {
+    color: #fff;
+    font-size: 26rpx;
+    font-weight: 700;
+    line-height: 68rpx;
+    width: 100%;
+}
+
+.userId {
+    color: #8c8c8c;
+    font-size: 24rpx;
+    height: 24rpx;
+    line-height: 24rpx;
+    margin-top: 14rpx;
+    width: 100%;
+}
+
+.more {
+    border-radius: 10rpx;
+    color: #ddd;
+    flex-shrink: 0;
+    font-size: 20rpx;
+    font-size: 24rpx;
+    height: 68rpx;
+    margin-left: 20rpx;
+    margin-top: 32rpx;
+    overflow: hidden;
+    padding-left: 14rpx;
+}
+
+.rightIco {
+    height: 18rpx;
+    margin-left: 8rpx;
+    width: 10rpx;
+}
+
+.itemCon {
+    padding: 16rpx 44rpx 26rpx;
+    position: absolute;
+    top: 80rpx;
+    width: 100%;
+}
+
+.itemImgCon {
+    flex-shrink: 0;
+    height: 320rpx;
+    width: 210rpx;
+}
+
+.itemImg,.itemImgCon {
+    border-radius: 16rpx;
+    position: relative;
+}
+
+.itemImg {
+    border: 2rpx solid #fff;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.itemBac {
+    height: 216rpx;
+    left: 6rpx;
+    position: absolute;
+    top: 6rpx;
+    width: 216rpx;
+}
+
+.itemImgCon1 {
+    margin: 0 16rpx;
+}

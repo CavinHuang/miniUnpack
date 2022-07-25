@@ -1,0 +1,15 @@
+.complaint-view {
+    background-color: #757aff;
+    border-radius: 0 24rpx 24rpx 0;
+    box-shadow: 0rpx 10rpx 20rpx 0rpx rgba(0,0,0,.24);
+    color: #fff;
+    font-size: 26rpx;
+    font-weight: 700;
+    left: 0;
+    line-height: 32rpx;
+    padding: 16rpx 0 16rpx 8rpx;
+    position: fixed;
+    top: 160rpx;
+    width: 46rpx;
+    z-index: 99;
+}

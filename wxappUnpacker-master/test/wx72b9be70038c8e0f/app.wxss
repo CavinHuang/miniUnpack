@@ -1,0 +1,116 @@
+image,view {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.jc {
+    justify-content: center;
+}
+
+.fc {
+    flex-direction: column;
+}
+
+.ac {
+    align-items: center;
+}
+
+.jb {
+    justify-content: space-between;
+}
+
+.txt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@keyframes scaleIng {
+    100%,from {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.error-view {
+    text-align: center;
+    width: 100%;
+}
+
+.error-view .errorImg {
+    display: block;
+    margin: 0 auto;
+    width: 172rpx;
+}
+
+.error-view .errtxt {
+    color: #73d7b1;
+    font-size: 26rpx;
+    margin-top: 12rpx;
+}
+
+.more-finish {
+    margin: auto;
+    padding-bottom: 40rpx;
+    padding-top: 40rpx;
+    text-align: center;
+}
+
+.bottom-line {
+    display: inline;
+    padding: 8px 0;
+}
+
+.more-line {
+    background: #eee;
+    display: inline-block;
+    height: 1px;
+    line-height: 20px;
+    margin: auto;
+    vertical-align: middle;
+    width: 60px;
+}
+
+.more-lineTxt {
+    color: #999;
+    font-size: 24rpx;
+    margin: auto;
+    padding: 0 6px;
+    text-align: center;
+}
+
+.loading-more {
+    display: table;
+    margin: auto;
+    padding-bottom: 32rpx;
+    padding-top: 32rpx;
+}
+
+#loadingMore .more-bottom-line,.loadmore .more-bottom-line {
+    align-items: center;
+    display: flex;
+}
+
+.loading-more .more-loading {
+    animation: spin 1s linear infinite;
+    border: 4rpx solid #eee;
+    border-radius: 50%;
+    border-top-color: #ccc;
+    box-sizing: initial;
+    height: 14rpx;
+    margin-right: 4rpx;
+    padding: 4rpx;
+    width: 14rpx;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(1turn);
+    }
+}

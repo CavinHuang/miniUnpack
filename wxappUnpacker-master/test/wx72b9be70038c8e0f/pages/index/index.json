@@ -1,0 +1,10 @@
+{
+    "usingComponents": {
+        "complaint": "/components/complaint/complaint",
+        "imgloading": "/components/imgloading/index"
+    },
+    "navigationStyle": "custom",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white"
+}

@@ -1,0 +1,3 @@
+<view bindtap="toTop" class="totop" style="display:{{show?'black':'none'}};">
+    <image class="totop-ico" mode="widthFix" src="/image/ico_totop.png"></image>
+</view>

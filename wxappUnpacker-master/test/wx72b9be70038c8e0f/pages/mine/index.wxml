@@ -1,0 +1,25 @@
+<image class="bimg" mode="aspectFill" src="https://img.yugew.com/image/f481993a27969e9d569680082de46a7d.png"></image>
+<view class="page">
+    <view bindtap="login" class="userInfo flex ac jb">
+        <image class="userImg" mode="aspectFill" src="{{avatarUrl}}"></image>
+        <view class="userCon">
+            <view class="userName txt">{{nickName?nickName:'点击登录'}}</view>
+        </view>
+    </view>
+    <view class="feature">
+        <view class="featureList flex ac ">
+            <view bindtap="goPage" class="featureItem flex ac" data-name="{{item.name}}" wx:if="{{item.name!='giveFeedback'}}" wx:for="{{featureList}}" wx:key="key">
+                <image class="featureItemImg" mode="widthFix" src="{{item.img}}"></image>
+                <view class="featureItemTit txt">{{item.title}}</view>
+                <image class="featureItemLeftImg" mode="widthFix" src="https://p3.toutiaoimg.com/origin/pgc-image/0b85c4cb7073452fa4e8f95c2c5cbce7"></image>
+            </view>
+        </view>
+    </view>
+    <button class="shareBtn" openType="share">
+        <view class="featureItem flex ac">
+            <image class="featureItemImg" mode="widthFix" src="/image/icon_share.png"></image>
+            <view class="featureItemTit txt">分享给好友</view>
+            <image class="featureItemLeftImg" mode="widthFix" src="https://p3.toutiaoimg.com/origin/pgc-image/0b85c4cb7073452fa4e8f95c2c5cbce7"></image>
+        </view>
+    </button>
+</view>

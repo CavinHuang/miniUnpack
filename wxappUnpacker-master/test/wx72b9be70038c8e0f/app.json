@@ -1,0 +1,63 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/mine/index",
+        "pages/moreIsfp/index"
+    ],
+    "window": {
+        "navigationStyle": "default",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "backgroundColor": "#1A1A1A",
+        "borderStyle": "black",
+        "color": "#9D9DA3",
+        "selectedColor": "#4739F4",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "image/index.png",
+                "selectedIconPath": "image/indexs.png"
+            },
+            {
+                "pagePath": "pages/moreIsfp/index",
+                "text": "创作者",
+                "iconPath": "image/isfp.png",
+                "selectedIconPath": "image/isfps.png"
+            },
+            {
+                "pagePath": "pages/mine/index",
+                "text": "我的",
+                "iconPath": "image/mine.png",
+                "selectedIconPath": "image/mines.png"
+            }
+        ]
+    },
+    "subPackages": [
+        {
+            "root": "pages/tabindex/",
+            "pages": [
+                "detail/index",
+                "isfp/index",
+                "search/index",
+                "voiceDetail/detail/index",
+                "voiceDetail/index/index"
+            ]
+        },
+        {
+            "root": "pages/tabmine/",
+            "pages": [
+                "downloadHistory/index",
+                "framer/index"
+            ]
+        },
+        {
+            "root": "pages/common/",
+            "pages": [
+                "complaint/complaint",
+                "question/index"
+            ]
+        }
+    ]
+}

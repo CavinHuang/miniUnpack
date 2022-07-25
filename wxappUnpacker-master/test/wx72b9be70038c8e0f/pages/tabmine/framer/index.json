@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "backbtn": "/components/backBtn/backbtn"
+    },
+    "navigationStyle": "custom",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "创作者入驻"
+}

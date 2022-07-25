@@ -1,0 +1,29 @@
+<view class="page">
+    <image class="bimg" mode="aspectFill" src="https://img.yugew.com/image/8c2981f5e2c9640d5074def4913cb408.png"></image>
+    <image class="banner" mode="widthFix" src="https://img.yugew.com/image/683b7d618e79a1c1653502f74d186b82.png"></image>
+    <view class="search flex ac">
+        <image class="searchIco" mode="widthFix" src="/image/icon_search.png"></image>
+        <input bindconfirm="goSearch" bindinput="searchValueChange" class="searchValue" confirmType="search" placeholder="请输入创作者口令" placeholderStyle="color:#000000;font-size:18px;" type="text" value="{{searchValue}}"></input>
+        <view bindtap="goSearch" class="submit">搜索</view>
+    </view>
+    <view class="flex jc">
+        <image class="author-tip-img" mode="widthFix" src="https://img.yugew.com/image/a604f3efaec8000121dacc8d540735fe.png"></image>
+    </view>
+    <scroll-view scrollX class="scrollX">
+        <view class="framerList flex ac">
+            <view bindtap="goisfp" class="framer-item flex fc" data-index="{{index}}" wx:for="{{indexAuthorList}}" wx:key="key">
+                <image class="itemImg" mode="aspectFill" src="{{item.avatar}}"></image>
+            </view>
+        </view>
+    </scroll-view>
+    <ad adTheme="black" adType="video" unitId="adunit-ea844d011cede5dc"></ad>
+    <view class="recommend">
+        <view bindtap="goPage" class="list-item" data-id="{{item.photo_id}}" wx:for="{{recommendList}}" wx:key="key">
+            <image lazyLoad="{{true}}" mode="aspectFill" src="{{item.url}}"></image>
+            <view class="image-loading-view" style="position: absolute;top:0;width:100%;height: 100%;">
+                <imgloading show="{{true}}" zIndex="0"></imgloading>
+            </view>
+        </view>
+    </view>
+</view>
+<complaint id="{{id}}" tag="detail" top="240"></complaint>

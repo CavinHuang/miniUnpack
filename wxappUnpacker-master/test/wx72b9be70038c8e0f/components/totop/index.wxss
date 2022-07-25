@@ -1,0 +1,29 @@
+.totop {
+    animation: slideUp .2s ease-in both;
+    background: #4739f4;
+    border-radius: 100rpx;
+    bottom: 100rpx;
+    box-shadow: 0rpx 10rpx 20rpx 0rpx rgba(0,0,0,.24);
+    height: 80rpx;
+    overflow: hidden;
+    padding: 16rpx;
+    position: fixed;
+    right: 8rpx;
+    width: 80rpx;
+    z-index: 999;
+}
+
+.totop .totop-ico {
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes slideUp {
+    from {
+        bottom: 0;
+    }
+
+    to {
+        bottom: 100rpx;
+    }
+}
